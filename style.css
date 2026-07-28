@@ -129,7 +129,7 @@ header {
 }
 /*section three*/
 .section-three {
-    background-image: url(../images/home/iphone11-bg.jpg);
+    background-image: url(iphone11-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,7 +184,7 @@ header {
 }
 .watch-section {
     height: 590px;
-    background-image: url(../images/home/watch-series-5.jpg);
+    background-image: url(watch-series-5.jpg);
     background-repeat: no-repeat;
     background-position:center ;
     background-size: cover;
@@ -194,7 +194,7 @@ header {
 }
 .card{
     height: 590px;
-    background-image: url(../images/home/apple-card.jpg);
+    background-image: url(apple-card.jpg);
     background-repeat: no-repeat;
     background-position:center ;
     background-size: cover;
@@ -234,17 +234,17 @@ header {
     display:flex;
 }
 .a1 { 
-    background-image: url(../images/home/apple-tv-background.jpg);
+    background-image: url(apple-tv-background.jpg);
 }
 .a2 { 
-    background-image: url(../images/home/air-pods.jpg);
+    background-image: url(air-pods.jpg);
 }
 .a3 { 
-    background-image: url(../images/home/macbook-pro.jpg);
+    background-image: url(macbook-pro.jpg);
 
 }
 .a4 { 
-    background-image: url(../images/home/new-ipad.jpg);
+    background-image: url(new-ipad.jpg);
     padding-top: 54px;
 }
 .a1, .a2, .a3, .a4 {
