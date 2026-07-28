@@ -1,4 +1,4 @@
-// DOM Elements
+  // DOM Elements
 const chatToggle = document.getElementById('ai-chat-toggle');
 const chatBox = document.getElementById('ai-chat-box');
 const closeBtn = document.getElementById('chat-close-btn');
@@ -52,30 +52,32 @@ function appendMessage(text, sender) {
 let chatHistory = [];
 
 // Gemini API Function
-async function callGeminiAPI(userPrompt, retries = 2) {
-  const API_KEY = "hidien";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${API_KEY}`;
-
-  // Push user prompt to history
+async function callGeminiAPI(userPrompt) {
+  // 1. Push user prompt to history just like you did before
   chatHistory.push({ role: "user", parts: [{ text: userPrompt }] });
 
-  const payload = {
-    system_instruction: {
-      parts: [
-        {
-          text: "You are an expert Apple Genius assistant on the official Apple website. Keep responses concise, friendly, and structured."
-        }
-      ]
-    },
-    contents: chatHistory
-  };
-
   try {
-    const response = await fetch(url, {
+    // 2. Fetch from YOUR backend proxy instead of Google directly
+    const response = await fetch('/api/get-data', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      // Send the chat history down to your serverless backend
+      body: JSON.stringify({ history: chatHistory })
     });
+
+    const data = await response.json();
+    
+    // 3. Return the text response coming back from your backend proxy
+    // (Adjust this line if needed depending on how your message element reads the return value)
+    return data.candidates[0].content.parts[0].text; 
+
+  } catch (error) {
+    console.error("Error calling backend proxy:", error);
+    return "Sorry, I'm having trouble connecting right now.";
+  }
+}
 
     // Auto-retry on temporary 503 server overload
     if (response.status === 503 && retries > 0) {
