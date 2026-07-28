@@ -1,0 +1,573 @@
+* {
+    padding: 0px;
+    margin:0px;
+    font-family:Montserrat, sans-serif ;
+    min-width: ;
+    
+}
+
+/*Header styles*/
+header {
+ background-color: black;
+}
+.header{
+    color:#ffffffbe ;
+    display:flex;
+    width:980px;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 47px;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0 10px;
+    
+}
+
+.header a:hover {
+    color: white;}
+/*.header a:hover img {background:}*/
+.header div { padding: 14px 0 8px;}
+
+.header div a {
+    text-decoration: none;
+    color: #ffffffa4;
+    ho
+}
+
+#logo {padding: 12px 0 10px;}
+.logos img {
+    width:18px ;
+}
+
+  /*First section*/
+#first-section {
+    text-align: center;
+    padding: 25px 0 ;
+}
+#inch-16{
+    font-size: 17px;
+    }
+.sec-1div{
+    width: 980px;
+    padding:0 10px;
+    margin: 0 auto;
+}
+#macbook {
+    font-size: 56px;
+    font-weight: 700;
+    }
+#the-beast{
+    font-size: 40px;
+}
+#both {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding:15px 0;
+    }
+#both a {
+    text-decoration: none;
+    color: #06c;
+    content: "\f105";  
+}
+#both a:hover{color: black;}
+#learn-more {
+    padding:0 20px 0 0 ;}
+    
+
+.macbook-img img{
+    display: flex;
+    width: 620px;
+    height: px;
+    margin: 0 auto;
+    padding: 15px 0 0;
+}
+.fa-solid {font-size: 15px;}
+/*Second section*/
+.second-section{
+     background-image: url(../images/home/iphone11-pro-bg.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#second-section {
+    
+   
+    width: 1000px;
+    height: 580px;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    margin: 0 auto;
+}
+#second-section #model {
+    font-size: 56px;
+    font-weight: 600;
+}
+#second-section #more-description{
+    font-size: 26px;
+    padding: 10px 0;
+}
+#second-section #price{
+    color: #86868b;
+}
+#second-section ul { padding: 15px 0}
+#second-section ul li {
+    display: inline-block;
+    padding-left: 20px ;
+    
+}
+#second-section ul li a {
+    
+    text-decoration: none;
+    color:#06c ;
+    font-size: 20px;
+}
+#second-section ul li a:hover{
+    color:black;
+}
+/*section three*/
+.section-three {
+    background-image: url(../images/home/iphone11-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 25px;
+    height: 580px;
+    b
+
+}
+#section-three {
+    width:867px;
+    height:710px;
+    text-align: center;
+    margin:0 auto;
+    
+}
+#model11{ 
+    font-size: 56px;
+    font-weight: 600;
+}
+#just-the {
+    font-size: 26px;
+    padding:10px;
+
+}
+.price11 {
+    font-size: 17px;
+    color: #86868b;
+}
+#section-three ul li {
+    text-align: center;
+    padding-right: 10px;
+    display: inline-block;
+    padding-right: 20px;
+}
+#section-three ul {
+    
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+
+}
+#section-three ul li a{
+    text-decoration: none;
+    color:#06c;
+    font-size: 20px ;
+    
+}
+/* fourth sectionn*/
+#fourth-section {
+    display: flex;
+    justify-content: space-between;
+}
+.watch-section {
+    height: 590px;
+    background-image: url(../images/home/watch-series-5.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    width:49%;
+    margin:auto;
+    
+}
+.card{
+    height: 590px;
+    background-image: url(../images/home/apple-card.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    width: 48.5%;
+    margin:1% 0.5% 0 1% ;
+}
+.watch-card  {
+    text-align: center;
+    font-size: 20px;
+    padding: 54px 0 0;
+    margin: 1% 0.5% 0 1%;
+}
+.watch-card ul {
+    list-style: none;
+    padding: 10px;
+}
+.watch-card ul li {
+    display: inline-block;
+    padding-right: 20px;
+    
+}
+#with, #get{
+    padding: 10px;
+    
+}
+.watch-card ul li a {
+    color: #06c;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*section five and six*/
+#fivith-section{
+    display:flex;
+    
+}
+#sixth-section{
+    display:flex;
+}
+.a1 { 
+    background-image: url(../images/home/apple-tv-background.jpg);
+}
+.a2 { 
+    background-image: url(../images/home/air-pods.jpg);
+}
+.a3 { 
+    background-image: url(../images/home/macbook-pro.jpg);
+
+}
+.a4 { 
+    background-image: url(../images/home/new-ipad.jpg);
+    padding-top: 54px;
+}
+.a1, .a2, .a3, .a4 {
+    width: 48.5%;
+    height: 580px;
+    text-align: center;
+    margin: 1% 0.5% 0 1%;
+} 
+.back{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    
+}
+.a2 {
+    background-size:300px ;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-color: black;
+    color: white;
+    padding-top:54px ;
+    
+}
+.a3 {
+    background-size: 440px auto;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-top: 54px;
+    background-color: #fafafa;
+    
+}
+.a1{
+    height: 636px;
+    background-size: cover;
+}
+.tv {
+    padding-top: 54px;
+}
+#tv-center{
+    padding:180px 0 200px;
+}
+#tv-center img{max-width: 100%;}
+#watch-the a{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#airpods{
+    font-size: 40px;
+    font-weight: bold;
+}
+#magic{
+    font-size: 20px;
+    padding: 10px;
+}
+#model16{
+    font-size: 17px;
+}
+#mackbook2{
+    font-size: 45px;
+    font-weight: 700;
+}
+#the-beast2, #like-a{
+    font-size: 20px;
+    padding: 10px;
+}
+.back ul li{
+    display: inline-block;
+    padding:15px 0;
+}
+ .back ul li a{
+    font-size: 20px;
+    color: #06c;
+    text-decoration: none;
+    padding-right: 20px;
+/*footer section*/
+}
+footer {
+    color: #86868b;
+    font-size: 13px;
+    background-color: #f5f5f7;
+}
+#footer {
+    width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+footer div ul p { 
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+#footer div ul li{
+    padding:5px 0;
+    font-size: 11.7px;
+}
+#footer div ul {
+    list-style: none;
+}
+#footer div ul li a {
+    text-decoration: none;
+    
+    color:#515154
+}
+/*for padding vertically bettwen*/
+.add {
+    padding-top: 20px;
+}
+#description{
+    padding: 17px 0 20px ;
+    
+    
+
+}
+.line1{
+    padding-bottom: 20px;
+}
+.line2{
+    padding: 10px 0;
+}
+#footer-button {
+    display: flex;
+    justify-content: space-between;
+}
+#footer-button div ul li a:hover{
+    text-decoration: underline;
+}
+#last-linkes{
+    display: flex;
+}
+.the-last-line {
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0 20px;
+}
+#more-ways{
+    color: #1d1d1f;
+    font-size: 13px;
+}
+#last-linkes li a{
+    padding: 0 5px;
+}
+#last-linkes li a:hover{
+    text-decoration: underline;
+}
+#us {
+    display: flex;
+}
+/* AI Floating Widget Styles */
+#ai-widget-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+}
+
+#ai-chat-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+#ai-chat-toggle:hover {
+  transform: scale(1.05);
+  background-color: #0077ed;
+}
+
+#ai-chat-box {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 340px;
+  height: 460px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#ai-chat-box.chat-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px) scale(0.95);
+}
+
+.chat-header {
+  background: #f5f5f7;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e7;
+}
+
+.chat-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1d1d1f;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#chat-close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #86868b;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.message.assistant {
+  background-color: #f2f2f7;
+  color: #1d1d1f;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.message.user {
+  background-color: #0071e3;
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-input-area {
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #e5e5e7;
+}
+
+#chat-input {
+  flex: 1;
+  border: 1px solid #d2d2d7;
+  border-radius: 20px;
+  padding: 8px 14px;
+  outline: none;
+  font-size: 13px;
+}
+
+#chat-send-btn {
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+/* Container for quick suggestion chips */
+.chat-suggestions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #f5f5f7;
+  border-top: 1px solid #e5e5e7;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hides scrollbar on Firefox */
+}
+
+/* Hides scrollbar on Chrome, Edge, and Safari */
+.chat-suggestions::-webkit-scrollbar {
+  display: none;
+}
+
+/* Apple-style pill buttons */
+.chat-suggestions button {
+  background-color: #ffffff;
+  color: #0071e3;
+  border: 1px solid #d2d2d7;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Hover state */
+.chat-suggestions button:hover {
+  background-color: #0071e3;
+  color: #ffffff;
+  border-color: #0071e3;
+}
+
+/* Line break formatting for AI responses */
+.message {
+  white-space: pre-wrap;
+}
+
+
+
+
+
+
