@@ -85,7 +85,7 @@ header {
 .fa-solid {font-size: 15px;}
 /*Second section*/
 .second-section{
-     background-image: url(iphone11-pro-bg.jpg);
+     background-image: url('iphone11-pro-bg.jpg');
     
     background-repeat: no-repeat;
     background-size: cover;
