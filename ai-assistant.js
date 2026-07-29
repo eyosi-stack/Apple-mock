@@ -78,32 +78,6 @@ async function callGeminiAPI(userPrompt) {
     return "Sorry, I'm having trouble connecting right now.";
   }
 }
-
-    // Auto-retry on temporary 503 server overload
-    if (response.status === 503 && retries > 0) {
-      await new Promise(res => setTimeout(res, 1000));
-      return callGeminiAPI(userPrompt, retries - 1);
-    }
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      chatHistory.pop(); // Remove failed prompt from history
-      return `API Error ${response.status}: ${data.error?.message || 'Check request'}`;
-    }
-
-    const replyText = data.candidates[0].content.parts[0].text;
-    
-    // Push AI reply to history for multi-turn chat memory
-    chatHistory.push({ role: "model", parts: [{ text: replyText }] });
-
-    return replyText;
-
-  } catch (err) {
-    chatHistory.pop();
-    return "Network error. Please check your internet connection.";
-  }
-}
 function sendQuickPrompt(text) {
   document.getElementById('chat-input').value = text;
   handleSendMessage();
