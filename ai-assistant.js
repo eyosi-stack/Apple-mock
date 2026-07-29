@@ -72,6 +72,13 @@ async function callGeminiAPI(userPrompt) {
     // 3. Return the text response coming back from your backend proxy
     // (Adjust this line if needed depending on how your message element reads the return value)
     return data.candidates[0].content.parts[0].text; 
+    const data = await response.json();
+
+// 1. Add this temporary line to check the structure in your browser console:
+console.log("This is what the proxy returned:", data);
+
+// 2. Adjust this line based on what the console shows:
+return data.candidates[0].content.parts[0].text;
 
   } catch (error) {
     console.error("Error calling backend proxy:", error);
