@@ -4,8 +4,7 @@ export default async function handler(request, response) {
     const apiKey = process.env.MY_SECRET_API_KEY;
 
     // 2. Define the real Google Gemini API endpoint using your key
-    const apiURL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
-
+    const apiURL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${apiKey}`;
     try {
         // 3. Forward the incoming chat history from your frontend down to Gemini
         const apiResponse = await fetch(apiURL, {
