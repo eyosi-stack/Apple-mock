@@ -79,7 +79,6 @@ async function callGeminiAPI(userPrompt) {
         return "Sorry, I'm having trouble connecting right now.";
     }
 }
-}
 function sendQuickPrompt(text) {
   document.getElementById('chat-input').value = text;
   handleSendMessage();
