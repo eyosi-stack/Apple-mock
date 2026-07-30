@@ -1,101 +1,109 @@
 * {
     padding: 0px;
-    margin:0px;
-    font-family:Montserrat, sans-serif ;
-    min-width: ;
-    
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't crack layouts on mobile */
 }
 
-/*Header styles*/
-header {
- background-color: black;
+/* Base Responsive Image Rules */
+img {
+    max-width: 100%;
+    height: auto;
 }
-.header{
-    color:#ffffffbe ;
-    display:flex;
-    width:980px;
+
+/* Header styles */
+header {
+    background-color: black;
+    width: 100%;
+}
+.header {
+    color: #ffffffbe;
+    display: flex;
+    width: 100%;
+    max-width: 980px;
     justify-content: space-between;
     margin: 0 auto;
     height: 47px;
     font-size: 15px;
     text-decoration: none;
     padding: 0 10px;
-    
 }
 
 .header a:hover {
-    color: white;}
-/*.header a:hover img {background:}*/
-.header div { padding: 14px 0 8px;}
+    color: white;
+}
+.header div { padding: 14px 0 8px; }
 
 .header div a {
     text-decoration: none;
     color: #ffffffa4;
-    ho
 }
 
-#logo {padding: 12px 0 10px;}
+#logo { padding: 12px 0 10px; }
 .logos img {
-    width:18px ;
+    width: 18px;
 }
 
-  /*First section*/
+/* First section */
 #first-section {
     text-align: center;
-    padding: 25px 0 ;
+    padding: 25px 0;
+    width: 100%;
 }
-#inch-16{
+#inch-16 {
     font-size: 17px;
-    }
-.sec-1div{
-    width: 980px;
-    padding:0 10px;
+}
+.sec-1div {
+    width: 100%;
+    max-width: 980px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 #macbook {
     font-size: 56px;
     font-weight: 700;
-    }
-#the-beast{
+}
+#the-beast {
     font-size: 40px;
 }
 #both {
     display: flex;
     justify-content: center;
     font-size: 20px;
-    padding:15px 0;
-    }
+    padding: 15px 0;
+}
 #both a {
     text-decoration: none;
     color: #06c;
     content: "\f105";  
 }
-#both a:hover{color: black;}
+#both a:hover { color: black; }
 #learn-more {
-    padding:0 20px 0 0 ;}
-    
+    padding: 0 20px 0 0;
+}
 
-.macbook-img img{
-    display: flex;
-    width: 620px;
-    height: px;
+.macbook-img img {
+    display: block;
+    max-width: 620px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px 0 0;
 }
-.fa-solid {font-size: 15px;}
-/*Second section*/
-.second-section{
-     background-image: url('iphone11-pro-bg.jpg');
-    
+.fa-solid { font-size: 15px; }
+
+/* Second section */
+.second-section {
+    background-image: url('iphone11-pro-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 #second-section {
-    
-   
-    width: 1000px;
-    height: 580px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 580px;
+    height: auto;
     color: white;
     text-align: center;
     padding: 65px 20px;
@@ -105,54 +113,52 @@ header {
     font-size: 56px;
     font-weight: 600;
 }
-#second-section #more-description{
+#second-section #more-description {
     font-size: 26px;
     padding: 10px 0;
 }
-#second-section #price{
+#second-section #price {
     color: #86868b;
 }
-#second-section ul { padding: 15px 0}
+#second-section ul { padding: 15px 0 }
 #second-section ul li {
     display: inline-block;
-    padding-left: 20px ;
-    
+    padding-left: 20px;
 }
 #second-section ul li a {
-    
     text-decoration: none;
-    color:#06c ;
+    color: #06c;
     font-size: 20px;
 }
-#second-section ul li a:hover{
-    color:black;
+#second-section ul li a:hover {
+    color: black;
 }
-/*section three*/
+
+/* section three */
 .section-three {
     background-image: url(iphone11-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 65px 25px;
-    height: 580px;
-    b
-
+    min-height: 580px;
+    height: auto;
+    width: 100%;
 }
 #section-three {
-    width:867px;
-    height:710px;
+    width: 100%;
+    max-width: 867px;
+    height: auto;
     text-align: center;
-    margin:0 auto;
-    
+    margin: 0 auto;
 }
-#model11{ 
+#model11 { 
     font-size: 56px;
     font-weight: 600;
 }
 #just-the {
     font-size: 26px;
-    padding:10px;
-
+    padding: 10px;
 }
 .price11 {
     font-size: 17px;
@@ -160,48 +166,46 @@ header {
 }
 #section-three ul li {
     text-align: center;
-    padding-right: 10px;
     display: inline-block;
     padding-right: 20px;
 }
 #section-three ul {
-    
     list-style: none;
     text-align: center;
     padding: 15px 0;
-
 }
-#section-three ul li a{
+#section-three ul li a {
     text-decoration: none;
-    color:#06c;
-    font-size: 20px ;
-    
+    color: #06c;
+    font-size: 20px;
 }
-/* fourth sectionn*/
+
+/* fourth sectionn */
 #fourth-section {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .watch-section {
     height: 590px;
     background-image: url(watch-series-5.jpg);
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     background-size: cover;
-    width:49%;
-    margin:auto;
-    
+    width: 48.5%;
+    margin: 1% 0.5% 0 1%;
 }
-.card{
+.card {
     height: 590px;
     background-image: url(apple-card.jpg);
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     background-size: cover;
     width: 48.5%;
-    margin:1% 0.5% 0 1% ;
+    margin: 1% 0.5% 0 1%;
 }
-.watch-card  {
+.watch-card {
     text-align: center;
     font-size: 20px;
     padding: 54px 0 0;
@@ -214,24 +218,21 @@ header {
 .watch-card ul li {
     display: inline-block;
     padding-right: 20px;
-    
 }
-#with, #get{
+#with, #get {
     padding: 10px;
-    
 }
 .watch-card ul li a {
     color: #06c;
     text-decoration: none;
     font-size: 20px;
 }
-/*section five and six*/
-#fivith-section{
-    display:flex;
-    
-}
-#sixth-section{
-    display:flex;
+
+/* section five and six */
+#fivith-section, #sixth-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .a1 { 
     background-image: url(apple-tv-background.jpg);
@@ -241,7 +242,6 @@ header {
 }
 .a3 { 
     background-image: url(macbook-pro.jpg);
-
 }
 .a4 { 
     background-image: url(new-ipad.jpg);
@@ -253,20 +253,18 @@ header {
     text-align: center;
     margin: 1% 0.5% 0 1%;
 } 
-.back{
+.back {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center ;
-    
+    background-position: center;
 }
 .a2 {
-    background-size:300px ;
+    background-size: 300px;
     background-position-x: center;
     background-position-y: bottom;
     background-color: black;
     color: white;
-    padding-top:54px ;
-    
+    padding-top: 54px;
 }
 .a3 {
     background-size: 440px auto;
@@ -274,60 +272,62 @@ header {
     background-position-y: bottom;
     padding-top: 54px;
     background-color: #fafafa;
-    
 }
-.a1{
+.a1 {
     height: 636px;
     background-size: cover;
 }
 .tv {
     padding-top: 54px;
 }
-#tv-center{
-    padding:180px 0 200px;
+#tv-center {
+    padding: 180px 0 200px;
 }
-#tv-center img{max-width: 100%;}
-#watch-the a{
+#tv-center img { max-width: 100%; }
+#watch-the a {
     font-size: 1.2em;
     text-decoration: none;
 }
-#airpods{
+#airpods {
     font-size: 40px;
     font-weight: bold;
 }
-#magic{
+#magic {
     font-size: 20px;
     padding: 10px;
 }
-#model16{
+#model16 {
     font-size: 17px;
 }
-#mackbook2{
+#mackbook2 {
     font-size: 45px;
     font-weight: 700;
 }
-#the-beast2, #like-a{
+#the-beast2, #like-a {
     font-size: 20px;
     padding: 10px;
 }
-.back ul li{
+.back ul li {
     display: inline-block;
-    padding:15px 0;
+    padding: 15px 0;
 }
- .back ul li a{
+.back ul li a {
     font-size: 20px;
     color: #06c;
     text-decoration: none;
     padding-right: 20px;
-/*footer section*/
 }
+
+/* footer section */
 footer {
     color: #86868b;
     font-size: 13px;
     background-color: #f5f5f7;
+    width: 100%;
 }
 #footer {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -336,8 +336,8 @@ footer div ul p {
     font-size: 12px;
     font-weight: 600;
 }
-#footer div ul li{
-    padding:5px 0;
+#footer div ul li {
+    padding: 5px 0;
     font-size: 11.7px;
 }
 #footer div ul {
@@ -345,229 +345,256 @@ footer div ul p {
 }
 #footer div ul li a {
     text-decoration: none;
-    
-    color:#515154
+    color: #515154;
 }
-/*for padding vertically bettwen*/
 .add {
     padding-top: 20px;
 }
-#description{
-    padding: 17px 0 20px ;
-    
-    
-
+#description {
+    padding: 17px 0 20px;
 }
-.line1{
+.line1 {
     padding-bottom: 20px;
 }
-.line2{
+.line2 {
     padding: 10px 0;
 }
 #footer-button {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-#footer-button div ul li a:hover{
+#footer-button div ul li a:hover {
     text-decoration: underline;
 }
-#last-linkes{
+#last-linkes {
     display: flex;
+    flex-wrap: wrap;
 }
 .the-last-line {
     display: flex;
     justify-content: space-between;
-    padding:10px 0 20px;
+    padding: 10px 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-#more-ways{
+#more-ways {
     color: #1d1d1f;
     font-size: 13px;
 }
-#last-linkes li a{
+#last-linkes li a {
     padding: 0 5px;
 }
-#last-linkes li a:hover{
+#last-linkes li a:hover {
     text-decoration: underline;
 }
 #us {
     display: flex;
 }
+
 /* AI Floating Widget Styles */
 #ai-widget-container {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 9999;
-  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
 }
 
 #ai-chat-toggle {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: #0071e3;
-  color: #fff;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease, background-color 0.2s;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s;
 }
 
 #ai-chat-toggle:hover {
-  transform: scale(1.05);
-  background-color: #0077ed;
+    transform: scale(1.05);
+    background-color: #0077ed;
 }
 
 #ai-chat-box {
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  width: 340px;
-  height: 460px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 340px;
+    height: 460px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #ai-chat-box.chat-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.95);
 }
 
 .chat-header {
-  background: #f5f5f7;
-  padding: 14px 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e5e5e7;
+    background: #f5f5f7;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e7;
 }
 
 .chat-title {
-  font-weight: 600;
-  font-size: 15px;
-  color: #1d1d1f;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 #chat-close-btn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  color: #86868b;
-  cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #86868b;
+    cursor: pointer;
 }
 
 .chat-messages {
-  flex: 1;
-  padding: 16px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .message {
-  max-width: 80%;
-  padding: 10px 14px;
-  border-radius: 14px;
-  font-size: 13.5px;
-  line-height: 1.4;
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 13.5px;
+    line-height: 1.4;
+    white-space: pre-wrap;
 }
 
 .message.assistant {
-  background-color: #f2f2f7;
-  color: #1d1d1f;
-  align-self: flex-start;
-  border-bottom-left-radius: 4px;
+    background-color: #f2f2f7;
+    color: #1d1d1f;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
 }
 
 .message.user {
-  background-color: #0071e3;
-  color: #ffffff;
-  align-self: flex-end;
-  border-bottom-right-radius: 4px;
+    background-color: #0071e3;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
 }
 
 .chat-input-area {
-  padding: 12px;
-  display: flex;
-  gap: 8px;
-  border-top: 1px solid #e5e5e7;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid #e5e5e7;
 }
 
 #chat-input {
-  flex: 1;
-  border: 1px solid #d2d2d7;
-  border-radius: 20px;
-  padding: 8px 14px;
-  outline: none;
-  font-size: 13px;
+    flex: 1;
+    border: 1px solid #d2d2d7;
+    border-radius: 20px;
+    padding: 8px 14px;
+    outline: none;
+    font-size: 13px;
 }
 
 #chat-send-btn {
-  background: #0071e3;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
+    background: #0071e3;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
 }
 
-/* Container for quick suggestion chips */
 .chat-suggestions {
-  display: flex;
-  gap: 8px;
-  padding: 8px 12px;
-  background-color: #f5f5f7;
-  border-top: 1px solid #e5e5e7;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none; /* Hides scrollbar on Firefox */
+    display: flex;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: #f5f5f7;
+    border-top: 1px solid #e5e5e7;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
 }
 
-/* Hides scrollbar on Chrome, Edge, and Safari */
 .chat-suggestions::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-/* Apple-style pill buttons */
 .chat-suggestions button {
-  background-color: #ffffff;
-  color: #0071e3;
-  border: 1px solid #d2d2d7;
-  border-radius: 20px;
-  padding: 6px 14px;
-  font-size: 12px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
+    background-color: #ffffff;
+    color: #0071e3;
+    border: 1px solid #d2d2d7;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
 }
 
-/* Hover state */
 .chat-suggestions button:hover {
-  background-color: #0071e3;
-  color: #ffffff;
-  border-color: #0071e3;
+    background-color: #0071e3;
+    color: #ffffff;
+    border-color: #0071e3;
 }
 
-/* Line break formatting for AI responses */
-.message {
-  white-space: pre-wrap;
+/* ==========================================================================
+   New Responsive Additions (Media Queries)
+   ========================================================================== */
+
+/* Tablet & Mobile Screens (Breaks grid items down smoothly) */
+@media (max-width: 768px) {
+    #macbook { font-size: 40px; }
+    #the-beast { font-size: 28px; }
+    #second-section #model, #model11 { font-size: 40px; }
+    
+    .watch-section, .card, .a1, .a2, .a3, .a4 {
+        width: 98% !important;
+        margin: 1% 1% 2% 1% !important;
+    }
+    
+    #fourth-section, #fivith-section, #sixth-section {
+        flex-direction: column;
+    }
+    
+    #footer-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
-
-
-
-
-
+/* Mobile Small Devices (Handles compact header styles and UI elements) */
+@media (max-width: 480px) {
+    .header {
+        font-size: 12px;
+        flex-wrap: nowrap;
+    }
+    #macbook { font-size: 32px; }
+    #second-section #model, #model11 { font-size: 32px; }
+    #ai-chat-box {
+        width: 290px;
+        height: 400px;
+        right: -10px;
+    }
+}
